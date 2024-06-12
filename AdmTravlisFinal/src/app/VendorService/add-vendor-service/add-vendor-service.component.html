@@ -1,0 +1,39 @@
+<div class="form_wrapper dashshadow">
+<div class="form_container">
+<div class="title_container">
+<h2> VendorService Form</h2>
+</div>
+<div class="row clearfix">
+<div class="">
+<form>
+<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+<input type="Int32" id="AdmVendorId" class="form-control" placeholder="AdmVendorId"
+[(ngModel)]="vendorService.AdmVendorId" #AdmVendorIdControl="ngModel" name="AdmVendorId" required
+autofocus="">
+</div>
+<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+<input type="Int32" id="ServiceTableId" class="form-control" placeholder="ServiceTableId"
+[(ngModel)]="vendorService.ServiceTableId" #ServiceTableIdControl="ngModel" name="ServiceTableId" required
+autofocus="">
+</div>
+<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+<input type="Int32" id="AdmDestinationsId" class="form-control" placeholder="AdmDestinationsId"
+[(ngModel)]="vendorService.AdmDestinationsId" #AdmDestinationsIdControl="ngModel" name="AdmDestinationsId" required
+autofocus="">
+</div>
+<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+<input type="" id="ServiceCost" class="form-control" placeholder="ServiceCost"
+[(ngModel)]="vendorService.ServiceCost" #ServiceCostControl="ngModel" name="ServiceCost" required
+autofocus="">
+</div>
+<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+<input type="text" id="Status" class="form-control" placeholder="Status"
+[(ngModel)]="vendorService.Status" #StatusControl="ngModel" name="Status" required
+autofocus="">
+</div>
+<input class="button" type="submit" (click)="OnSubmit();" value="Submit" />
+</form>
+</div>
+</div>
+</div>
+</div>
